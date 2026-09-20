@@ -1,0 +1,56 @@
+
+# Operator Polymorphism Program
+# A simple shopping-cart example
+
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    # + operator combines prices of two products
+    def __add__(self, other):
+        return self.price + other.price
+
+    # Prints product details neatly
+    def __str__(self):
+        return f"{self.name} - ₹{self.price}"
+
+
+# Create product objects
+product1 = Product("Notebook", 50)
+product2 = Product("Pen", 20)
+product3 = Product("Bag", 500)
+
+# Display products
+print("Products:")
+print(product1)
+print(product2)
+print(product3)
+
+# Using + operator with Product objects
+total = product1 + product2 + product3
+
+print("\nBill Details")
+print("Notebook price:", product1.price)
+print("Pen price:", product2.price)
+print("Bag price:", product3.price)
+print("Total price:", total)
+
+# + operator also works for numbers and strings
+print("\nOther examples of + operator:")
+print("Number addition:", 10 + 5)
+print("String joining:", "Python " + "Programming")
+print(product2)
+print(product3)
+
+total = product1 + product2 + product3
+
+print("\nBill Details")
+print("Notebook price:", product1.price)
+print("Pen price:", product2.price)
+print("Bag price:", product3.price)
+print("Total price:", total)
+
+print("\nOther examples of + operator:")
+print("Number addition:", 10 + 5)
+print("String joining:", "Python " + "Programming")
