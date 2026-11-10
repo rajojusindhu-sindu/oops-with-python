@@ -1,0 +1,11 @@
+class student:
+   def__init__(self,name,roll no):
+      self.name=name
+      self.rollno=rollno
+   def read(self):
+      print(self.name)
+      print(self.rollno)
+s1=student("shalini",20)
+s1.read()
+s2=student("ritu",17)
+s2.read()
