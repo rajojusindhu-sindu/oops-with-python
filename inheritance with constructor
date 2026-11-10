@@ -1,0 +1,12 @@
+class demo()
+  def__init__(self,name,age):
+     self.name=name
+     self.age=age
+class sample(demo):
+   def info(self):
+      print(self.name)
+      print(self.age)
+sam 1=sample("abc",12)
+sam1.info()
+sam 2=sample("cbd",11)
+sam2.info()
