@@ -1,0 +1,17 @@
+class upi:
+   def cash withdrawl(self):
+      print("successful transaction trough upi")
+class creditcard(upi)
+   def cash withdrawl(self):
+      print("successful transaction through credit card")
+class netbanking(upi):
+  def cash withdrawl(self):
+      print("successful transaction through netbanking")
+  def payment(self):
+      self.cash withdrawl()
+u=upi()
+c=creditcard()
+n=netbanking()
+payment(u)
+payment(c)
+payment(n)
