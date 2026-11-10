@@ -1,0 +1,9 @@
+try:
+  a=int(input("enter a="))
+  b=int(input("enter b="))
+  print(a/b)
+except ValueError:
+  print("enter number only")
+except ZeroDivisionError:
+  print("division not possible")
+  
