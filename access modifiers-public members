@@ -1,0 +1,5 @@
+class student:
+   name="sindhu"
+   age=19
+s=student(s.name)
+print(s.age)
