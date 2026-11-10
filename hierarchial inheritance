@@ -1,0 +1,17 @@
+class vegetables:
+   def protein(self):
+     print("vegetables protein")
+class tamato(vegetable):
+   def vitamin(self):
+     print("tamato vitamin")
+class small tamato(vegetable)
+   def protein(self):
+     print("small tamato protein")
+p.vegetable()
+c=tamato()
+d1=small tamato()
+p.protein()
+c1.protein()
+d1.protein()
+  
+  
